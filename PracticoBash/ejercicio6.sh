@@ -11,12 +11,11 @@ fi
 if [ -f "$ruta" ]
 then
    echo "la ruta: $ruta recibida es un archivo regular"
+else
+   echo "la ruta: $ruta recibida NO es un archivo regular"
 fi
 
-if [ -c "$ruta" ]
-then
-   echo "la ruta: $ruta recibida es un caracter especial"
-fi
+
 
 ls -l $ruta
 
